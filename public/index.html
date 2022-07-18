@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+    <title>Пятое измерение</title>
+</head>
+
+<body>
+    <section class="history-block">
+        <div class="container">
+            <div class="history-block__content">
+                <article class="history-block__item history">
+                    <h2 class="history__header">
+                        1969
+                        <span>год</span>
+                    </h2>
+                    <p class="history__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula erat sed lobortis sodales. Donec dictum id lacus id maximus.</p>
+                    <%= require('../src/icons/circle.svg') %>
+                </article>
+
+                <article class="history-block__item history">
+                    <h2 class="history__header">
+                        1997
+                        <span>год</span>
+                    </h2>
+                    <p class="history__content">Nulla in erat sit amet augue porta vulputate ac vel orci. Suspendisse quis velit eleifend.</p>
+                    <%= require('../src/icons/triangle.svg') %>
+                    <%= require('../src/icons/line.svg') %>
+                </article>
+
+                <article class="history-block__item history history--with-picture">
+                    <h2 class="history__header">
+                        2008
+                        <span>год</span>
+                    </h2>
+                    <p class="history__content">In luctus ipsum id enim molestie ornare. Donec eros augue, suscipit vel erat ac, convallis laoreet lectus.</p>
+                    <%= require('../src/icons/house.svg') %>
+                    <picture class="history__image">
+                        <source srcset="<%= require('../src/images/graduation_lg.jpg') %>" media="(min-width: 768px)">
+                        <img src="<%= require('../src/images/graduation_sm.jpg') %>"  alt="students">
+                    </picture>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="achievements">
+        <div class="container">
+            <div class="achievements__content">
+                <div class="achievements__image">
+                    <h2 class="achievements__header">700</h2>
+                    <p class="achievements__description"> Sed molestie, nisl quis consectetur elementum, leo orci condimentum lacus, </p>
+                </div>
+                <p class="achievements__text">Curabitur sed dapibus ipsum. Curabitur vitae mollis ipsum. Sed molestie, nisl quis consectetur elementum, leo orci condimentum lacus, id dignissim erat justo nec ligula. Nam varius massa mauris, sit amet tempor dolor molestie eu. Nulla a faucibus libero. Nam tristique metus tempor fermentum ultricies. Donec molestie vel nunc et posuere.</p>
+                <div class="achievements__footer">
+                    <img class="achievements__cup" src="<%= require('../src/images/cup.png') %>" alt="cup">
+                    <img class="achievements__cup" src="<%= require('../src/images/cup.png') %>" alt="cup">
+                    <div class="achievements__dots"></div>
+                    <div class="achievements__sign">
+                        Lorem ipsum
+                        <%= require('../src/icons/circle.svg') %>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <%= require('../src/icons/5d.svg') %>
+    </section>
+
+    <section class="cases">
+        <div class="container">
+            <div class="cases__content">
+                <a href="#" class="cases__item case case--large">
+                    <%= require('../src/icons/5d.svg') %>
+                    <div class="case__name">In ultrices sem</div>
+                </a>
+                <a href="#" class="cases__item case">
+                    <%= require('../src/icons/5d.svg') %>
+                    <div class="case__name">Phasellus vel nibh finibus.</div>
+                </a>
+                <a href="#" class="cases__item case">
+                    <%= require('../src/icons/5d.svg') %>
+                    <div class="case__name">Nascetur ridiculus mus.</div>
+                </a>
+                <a href="#" class="cases__item case">
+                    <%= require('../src/icons/5d.svg') %>
+                    <div class="case__name">Vivamus euismod nunc, at pulvinar .</div>
+                </a>
+                <a href="#" class="cases__item case">
+                    <%= require('../src/icons/5d.svg') %>
+                    <div class="case__name">Etiam id vestibulum ex.</div>
+                </a>
+                <a href="#" class="cases__item case case--more">
+                    <%= require('../src/icons/arrow_right.svg') %>
+                    <div class="case__name">Orci varius natoque penatibus</div>
+                </a>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
